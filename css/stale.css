@@ -28,6 +28,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -181,6 +185,78 @@ html{
     cursor: pointer;
 }
 
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.icons-container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #eee;
+    color: var(--black);
+    text-align: center;
+}
+
+.icons-container .icons .content h3{
+    color: var(--yellow);
+    font-size: 2.5rem;
+}
+
+.icons-container .icons .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.icons-container .icons:hover{
+    background: var(--black);
+}
+
+.icons-container .icons:hover i{
+    background: var(--yellow);
+}
+
+.icons-container .icons:hover .content h3{
+    color: #fff;
+}
+
+.icons-container .icons:hover .content p{
+    color: #eee;
+}
 
 
 
@@ -232,6 +308,10 @@ html{
 
     .header.active {
         padding:2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 
 }
